@@ -1,3 +1,4 @@
+import axios from 'axios';
 let navbar = document.querySelector('.navbar')
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -34,7 +35,7 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
-import axios from 'axios';
+
 
 // Make a POST request to add a new order
 const addNewOrder = async (orderData) => {

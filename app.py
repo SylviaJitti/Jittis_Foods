@@ -1,15 +1,17 @@
-from flask import Flask, request, jsonify 
+from flask import Flask, request, jsonify, render_template 
 from models import db, Orders 
  
  
  
-app = Flask(__name__) 
+app = Flask(__name__,  template_folder='./templates') 
 app.config["SECRET_KEY"] = "dyddhd7373djdjcnnbv0f" 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///testing.sql" 
 db.init_app(app)
  
  
- 
+@app.route("/")
+def index():
+    return render_template('index.html')
  
 @app.route("/add_new_order", methods=["GET", "POST"]) 
 def new_order(): 
