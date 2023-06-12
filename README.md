@@ -1,5 +1,5 @@
 # Online-Food-Ordering-Web-App
-Online Food Ordering System Website using Flask, SQL, HTML & CSS. You can use any one of Visual Dtudio code or Pycharm server to run the Web App on your local machine. It has a food ordering module for a customer. It also provides menu, orders and user management module for admin.
+Online Food Ordering System Website using Flask, SQL, HTML & CSS. You can use any one of Visual Studio code or Pycharm server to run the Web App on your local machine.
 
 # Technologies Used
 <ul>
